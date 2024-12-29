@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Reservation Successful</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'restaurant/css/style.css' %}">
-</head>
-<body>
-    <h1>Thank you, {{ name }}! Your reservation is confirmed.</h1>
-    <a href="{% url 'home' %}">Back to Home</a>
-</body>
-</html>
+{% extends 'restaurant/base.html' %}
+
+{% block title %}Reservation Successful{% endblock %}
+
+{% block content %}
+<h1>Thank you, {{ name }}! Your reservation is confirmed.</h1>
+<a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}
