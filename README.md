@@ -25,3 +25,16 @@ spanish_restaurant_project/
 │   └── wsgi.py              # WSGI entry point for deployment
 ├── db.sqlite3               # SQLite database file
 ├── manage.py                # Django's management script
+
+
+Installation
+Clone the repository:
+   git clone <repository-url>
+   cd spanish_restaurant_project
+Set up a virtual environment:
+   python -m venv env
+   source env/bin/activate  # On Windows: env\Scripts\activate
+Apply migrations and start the server:
+   python manage.py migrate
+   python manage.py runserver
+Access the project at http://127.0.0.1:8000/.
