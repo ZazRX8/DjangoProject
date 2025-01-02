@@ -9,15 +9,22 @@
 </head>
 <body>
     <header>
-        <h1>Aguacate Restaurant</h1>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'menu' %}">Menu</a></li>
-                <li><a href="{% url 'reservation' %}">Reservations</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/media/menu_items/logo.png" alt="Aguacate Logo">
+            </div>
+            <div class="restaurant-name">
+                <h1>Aguacate Restaurant</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'menu' %}">Menu</a></li>
+                    <li><a href="{% url 'reservation' %}">Reservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
     <main>
         {% block content %}{% endblock %}
     </main>
